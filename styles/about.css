@@ -18,7 +18,7 @@ body {
 }
 
 p.firstname {
-  background-image: url(/goldbackground.jpg);
+  background-image: url(../goldbackground.jpg);
   opacity: .8;
   font-size: 60px;
   width: 100%;
@@ -174,5 +174,5 @@ a.social-link {
 }
 
 @media (min-width: 599px) {
-  
+
 }
