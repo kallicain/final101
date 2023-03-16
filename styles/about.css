@@ -174,5 +174,97 @@ a.social-link {
 }
 
 @media (min-width: 599px) {
+  .aboutme {
+  }
 
-}
+  .firsthalf {
+    flex-direction: row;
+    height: 100%;
+    align-items: start;
+  }
+
+  .cats {
+    margin-top: 0;
+    height: 375px;
+    width: 575px;
+    margin-right: 1%;
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .fillerbox {
+    margin-top: 10px;
+    width: 60px;
+    height: 375px;
+    margin-right: 1%;
+    background-image: url(/pattern.jpg);
+  }
+
+  .maintext {
+    height: 600px;
+    width: 25%;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .pictures {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 13%;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .books {
+    top: 72%;
+    margin-left: 6.8%;
+    height: 522px;
+    width: 250px;
+    position: absolute;
+  }
+
+  .alabama {
+    height: 522px;
+    width: 400px;
+    position: absolute;
+    top: 74%;
+    margin-left: 20.5%;
+  }
+
+  .twopictures {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+  }
+
+  .smallbox {
+    height: 100%;
+    width: 29%;
+    margin-left: 48.5%;
+  }
+
+  .subtext {
+    text-align: center;
+  }
+
+  .smallboxtwo {
+    height: 100%;
+    width: 29%;
+    margin-left: 48.5%;
+  }
+
+  .socials {
+    margin-bottom: 10px;
+  }
+
+  }
