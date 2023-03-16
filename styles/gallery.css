@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  background-color: #f3f3f3;
+}
+
+#photos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images {
+  margin-left: 6%;
+  }
+
+h1 {
+  font-family: 'Poller One';
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 50px;
+  padding: 15px 20px 20px;
+  width: fit-content;
+  margin-top: 5%;
+  background: linear-gradient(90deg, #e9dcbe, #8e8b82, #343434);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+#photos img {
+  height: 250px;
+  width: 200px;
+  margin: 5px;
+  opacity: .9;
+  transition: all .3s ease
+}
+
+#photos img:hover {
+  opacity: .5;
+}
+
+.ttt {
+  border-radius: 10px;
+  filter: grayscale(100%);
+}
+
+.hairsalon {
+  border-radius: 10px;
+}
+
+.todo {
+  filter: grayscale(100%);
+}
+
+.nasa {
+  border-radius: 10px;
+  filter: grayscale(100%);
+}
+
+.burger {
+  border-radius: 10px;
+  filter: grayscale(100%);
+}
+
+.socials {
+  margin: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+a.social-link {
+  color: rgb(26, 25, 25);
+  font-size: 20px;
+  text-transform: lowercase;
+}
