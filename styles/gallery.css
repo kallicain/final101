@@ -51,6 +51,10 @@ h1 {
   opacity: .5;
 }
 
+.fillerbox {
+  display: none;
+}
+
 .ttt {
   border-radius: 10px;
   filter: grayscale(100%);
@@ -85,4 +89,25 @@ a.social-link {
   color: rgb(26, 25, 25);
   font-size: 20px;
   text-transform: lowercase;
+}
+
+@media (min-width: 599px) {
+  body {
+    background-color: ;
+  }
+
+  h1 {
+    margin-top: 3%;
+  }
+
+  .images {
+    margin-left: 0;
+    width: 70%;
+  }
+
+  .fillerbox {
+    display: inline-flex;
+    height: 250px;
+    border-radius: 8px;
+  }
 }
