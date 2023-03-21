@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap" rel="stylesheet">  
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/index.html">Final101</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/index.html"
+              >Main<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="contact-title">
+      <h1>Let's get in touch</h1>
+    </header>
+
+    <main class="contact-form">
+      <h2>Send me a message</h2>
+      <h3>Fill out the form below</h3>
+
+      <div class="contact-boxes">
+        <input class="firstname" name="firstname" placeholder="First Name" type="text"/>
+        <input class="lastname" name="lastname" placeholder="Last Name" type="text"/>
+        <input class="email" name="email" placeholder="Email" type="text"/>
+        <input class="number" name="number" placeholder="Phone Number" type="number"/>
+        <input class="location" name="location" placeholder="Where are you located?" type="text"/>
+        <input class="company" name="company" placeholder="Company" type="text"/>
+      </div>
+
+      <div class="contact-checkboxes">
+        <h4>How did you hear about me?</h4>
+        <label><input class="resume" name="resume" type="checkbox"/>Resume</label>
+        <label><input class="school" name="school" type="checkbox"/>Austin Coding Academy</label>
+        <label><input class="online" name="online" type="checkbox"/>LinkedIn</label>
+      </div>
+
+      <div class="message-box">
+        <input class="message" name="message" placeholder="Send a message" type="text"/>
+      </div>
+
+      <button id="submitForm">Submit</button>
+    </main>
+
+
+    <footer class="socials">
+      <a href="https://codepen.io/kallicain" target="_blank" class="social-link">CodePen</a>
+      <a href="https://github.com/kallicain" target="_blank" class="social-link">GitHub</a>
+      <a href="https://www.linkedin.com/in/kalli-cain-5a3845150/" target="_blank" class="social-link">LinkedIn</a>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/contact.js"></script>
+  </body>
+</html>
