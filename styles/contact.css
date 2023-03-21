@@ -4,7 +4,7 @@ body {
 }
 
 .contact-title {
-  background-image: url(/contactimage.jpg);
+  background-image: url(../contactimage.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 225px;
