@@ -17,9 +17,14 @@ body {
 	}
 }
 
-nav.navbar-expand-lg.navbar-light.bg-light {
-  height: 100px;
-  background-color: inherit!important;
+.navbar-light .navbar-brand {
+  color: rgb(26, 25, 25);
+  font-weight: bold;
+  font-family: 'Gloock', serif;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: rgba(26, 25, 25, 0.644);
 }
 
 img {
@@ -123,15 +128,28 @@ a.card-link {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  font-family: 'Gloock', serif;
 }
 
 a.social-link {
   color: rgb(26, 25, 25);
-  font-size: 20px;
+  font-size: 17px;
   text-transform: lowercase;
 }
 
 @media (min-width: 599px) {
+  .navbar-nav .nav-item .nav-link {
+    color: rgb(26, 25, 25);
+    padding-left: 15.3rem;
+    font-size: 15px;
+    text-transform: lowercase;
+    font-family: 'Gloock', serif;
+   }
+
+   .navbar-nav .nav-item.active .nav-link,
+   .navbar-nav .nav-item:hover .nav-link {
+    color: rgba(26, 25, 25, 0.61);;
+   }
 
   img {
     height: 500px;

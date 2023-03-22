@@ -3,6 +3,16 @@ body {
   background-color: #d1e8e2;
 }
 
+.navbar-light .navbar-brand {
+  color: #a8512f;
+  font-weight: bold;
+  font-family: 'Gloock', serif;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #d3a292;
+}
+
 .name {
   display: flex;
   flex-direction: column;
@@ -128,16 +138,35 @@ li {
 }
 
 a.social-link {
-  color: rgb(26, 25, 25);
+  color: #d3a292;
   font-size: 20px;
   text-transform: lowercase;
   font-family: 'Philosopher', sans-serif;
 }
 
+.social-link:hover {
+  color: #a8512f;
+  text-decoration: none;
+}
+
 @media (min-width: 599px) {
-  body {
-    max-width: 1800px;
-  }
+  .navbar-nav .nav-item .nav-link {
+    color: #d3a292;
+    padding-left: 15.3rem;
+    font-size: 17px;
+    text-transform: lowercase;
+    font-family: 'Gloock', serif;
+    font-weight: bold;
+   }
+
+   .navbar-nav .nav-item.active .nav-link,
+   .navbar-nav .nav-item:hover .nav-link {
+    color: #a8512f;
+   }
+
+   .nav-item .nav-link.active {
+    color: #a8512f!important;
+   }
 
   .name {
     align-items: start;
@@ -205,7 +234,7 @@ a.social-link {
 
   .school {
     align-items: center;
-    margin-left: 27%;
+    margin-left: 29%;
     margin-bottom: 2%;
   }
 

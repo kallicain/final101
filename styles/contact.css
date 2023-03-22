@@ -3,6 +3,16 @@ body {
   background-color: #6d6b65;
 }
 
+.navbar-light .navbar-brand {
+  color: #e96370;
+  font-weight: bold;
+  font-family: 'Bitter', serif;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #8db5a7;
+}
+
 .contact-title {
   background-image: url(../contactimage.jpg);
   background-size: cover;
@@ -187,7 +197,7 @@ button {
   margin-bottom: 10%;
   background-color: #e96370;
   color: #f3f3f3;
-
+  font-family: 'Bitter', serif;
   padding: 10px;
 }
 
@@ -208,10 +218,32 @@ a.social-link {
   color: #8db5a7;
   font-size: 20px;
   text-transform: lowercase;
-  font-family: 'Philosopher', sans-serif;
+  font-family: 'Bitter', serif;
+}
+
+.social-link:hover {
+  color: #e96370;
+  text-decoration: none;
 }
 
 @media (min-width: 599px) {
+  .navbar-nav .nav-item .nav-link {
+    color: #8db5a7;
+    padding-left: 15.3rem;
+    font-size: 17px;
+    text-transform: lowercase;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+   }
+
+   .navbar-nav .nav-item.active .nav-link,
+   .navbar-nav .nav-item:hover .nav-link {
+    color: #e96370;
+   }
+
+   .nav-item .nav-link.active {
+    color: #e96370!important;
+   }
 
   .contact-title {
   height: 400px;

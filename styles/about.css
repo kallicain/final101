@@ -3,6 +3,16 @@ body {
   background-color: #fddf75;
 }
 
+.navbar-light .navbar-brand {
+  color: #c15d6d;
+  font-weight: bold;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #57d9f2;
+}
+
 .myname {
   display: flex;
   flex-direction: column;
@@ -21,7 +31,7 @@ p.firstname {
   background-image: url(../goldbackground.jpg);
   opacity: .8;
   font-size: 60px;
-  width: 100%;
+  width: 50%;
   color: white;
   text-transform: lowercase;
   text-align: center;
@@ -31,12 +41,12 @@ p.firstname {
 }
 
 .line {
-  width: 25px;
+  width: 100px;
   border: 1px solid #b9956d;
 }
 .dot {
-  height: 10px;
-  width: 20px;
+  height: 20px;
+  width: 25px;
   background-color: #b9956d;
   border-radius: 50%;
   display: inline-block;
@@ -45,6 +55,7 @@ p.firstname {
 .lastnameunderline {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1%;
 }
 
 p.lastname {
@@ -52,10 +63,11 @@ p.lastname {
   text-transform: uppercase;
   color: #474248;
   margin: 0;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .underline {
-  width: 110px;
+  width: 140px;
   border: 1px solid #b9956d;
   margin: 1%;
 }
@@ -84,19 +96,21 @@ p.lastname {
 
 .maintext {
   background-color: #c15d6d;
-  height: 200px;
+  height: 400px;
   margin-top: 2%;
   margin-bottom: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 94%;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .maintextbox {
-  background: white;
+  background: #c76f7eb6;
   width: 95%;
   text-align: center;
+  color: #474248;
 }
 
 .pictures {
@@ -120,6 +134,7 @@ p.lastname {
 }
 
 .smallbox {
+  height: 150px;
   margin-right: 0;
   margin-left: 15px;
   margin-bottom: 1%;
@@ -132,6 +147,7 @@ p.lastname {
 }
 
 .smallboxtwo {
+  height: 150px;
   padding-top: 4%;
   margin-bottom: 5%;
   margin-right: 0;
@@ -144,20 +160,57 @@ p.lastname {
   width: 94%;
 }
 
-.subtext {
-  width: 95%;
-  height: 75px;
-  margin-top: 3%;
-  text-align: center;
-  background: white;
-  margin-bottom: 6%;
-}
-
 .subtexttwo {
   width: 95%;
   height: 75px;
   text-align: center;
-  background: white;
+  background: #619768a8;
+  font-family: 'Libre Baskerville', serif;
+  color: #474248;
+}
+
+.hwrap {
+  width: 95%;
+  height: 125px; 
+  background: #d4935bd3;
+  border: 2px solid #c98548;
+  overflow: hidden;
+  text-align: center;
+  color: #474248;
+  font-family: 'Libre Baskerville', serif;
+  font-size: small;
+  padding-top: 10px;
+}
+
+.hmove {
+  display: flex;
+  position: relative;
+  top: 0; right: 0;
+}
+
+.hslide {
+  width: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+@keyframes slideh {
+  0% { right: 0; }
+  30% { right: 0; }
+  33% { right: 100%; }
+  63% { right: 100%; }
+  66% { right: 200%; }
+  97% { right: 200%; }
+  100% { right: 0; }
+}
+.hmove { animation: slideh linear 15s infinite; }
+.hmove:hover { animation-play-state: paused; }
+
+button {
+  background-color: #6ecc79d3;
+  color: #474248;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .socials {
@@ -166,15 +219,36 @@ p.lastname {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  font-family: 'Libre Baskerville', serif;
 }
 
 a.social-link {
-  color: rgb(26, 25, 25);
+  color: #c15d6d;
   font-size: 20px;
   text-transform: lowercase;
 }
 
+.social-link:hover {
+  color: #57d9f2;
+  text-decoration: none;
+}
+
+
 @media (min-width: 599px) {
+
+  .navbar-nav .nav-item .nav-link {
+    color: #57d9f2;
+    padding-left: 14rem;
+    font-size: 15px;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+   }
+
+   .navbar-nav .nav-item.active .nav-link,
+   .navbar-nav .nav-item:hover .nav-link {
+    color: #c15d6d;
+   }
 
   .firsthalf {
     flex-direction: row;
@@ -204,6 +278,7 @@ a.social-link {
     width: 25%;
     margin: 0;
     margin-top: 10px;
+    font-size: 20px;
   }
 
   .pictures {
@@ -220,7 +295,7 @@ a.social-link {
   }
 
   .books {
-    top: 72%;
+    top: 74%;
     margin-left: 6.8%;
     height: 522px;
     width: 250px;
@@ -231,7 +306,7 @@ a.social-link {
     height: 522px;
     width: 400px;
     position: absolute;
-    top: 74%;
+    top: 76%;
     margin-left: 20.5%;
   }
 
@@ -247,7 +322,7 @@ a.social-link {
   }
 
   .smallbox {
-    height: 40%;
+    height: 42%;
     width: 29%;
     margin-left: 48.5%;
   }
@@ -260,11 +335,10 @@ a.social-link {
   }
 
   .smallboxtwo {
-    height: 40%;
+    height: 36.5%;
     width: 29%;
     margin-left: 48.5%;
     margin-bottom: 2%;
-    
   }
 
   .subtexttwo {
